@@ -1,0 +1,11 @@
+---
+applications:
+- name: config-server
+  host: configshost
+  domain: cfapps.io
+  instances: 1
+  path: target/config-server-0.1.jar
+  memory: 750MB
+  random-route: false
+  env:
+    SPRING_PROFILES_ACTIVE: native
